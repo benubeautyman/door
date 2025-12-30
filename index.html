@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>To my lutappi</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Poppins:wght@300;400&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  min-height:100svh; /* Android-safe viewport */
+  background: radial-gradient(circle at top, #1a1a2e, #000);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#f2f2f2;
+  font-family:'Poppins', sans-serif;
+  padding:12px;
+}
+
+/* DIARY COVER */
+.cover{
+  position:relative;
+  width:100%;
+  max-width:420px;
+  min-height:75svh;
+  background:linear-gradient(145deg,#3b2f2f,#1c1414);
+  border-radius:20px;
+  padding:28px 22px;
+  box-shadow:
+    inset 0 0 30px rgba(255,255,255,0.08),
+    0 20px 40px rgba(0,0,0,0.6);
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  text-align:center;
+  overflow:hidden;
+}
+
+/* RED SCARF */
+.scarf{
+  position:absolute;
+  top:36%;
+  left:-30%;
+  width:160%;
+  height:70px;
+  background:linear-gradient(135deg,#7a0c16,#b11226,#7a0c16);
+  transform:rotate(-7deg);
+  box-shadow:0 8px 25px rgba(0,0,0,0.6);
+  opacity:0.95;
+}
+
+/* COVER TEXT */
+.cover h1{
+  font-family:'Playfair Display', serif;
+  font-size:28px;
+  margin-bottom:8px;
+  z-index:2;
+}
+
+.cover p{
+  font-size:14px;
+  opacity:0.85;
+  margin-bottom:26px;
+  z-index:2;
+}
+
+input{
+  padding:14px;
+  border:none;
+  border-radius:14px;
+  background:rgba(255,255,255,0.2);
+  color:white;
+  font-size:16px;
+  outline:none;
+  margin-bottom:16px;
+  z-index:2;
+}
+
+button{
+  padding:14px;
+  border:none;
+  border-radius:14px;
+  background:linear-gradient(135deg,#ff758c,#ff7eb3);
+  color:white;
+  font-size:16px;
+  cursor:pointer;
+  z-index:2;
+}
+
+.error{
+  margin-top:12px;
+  font-size:14px;
+  color:#ffb3b3;
+  display:none;
+  z-index:2;
+}
+
+/* DIARY PAGE */
+.diary{
+  display:none;
+  width:100%;
+  max-width:420px;
+  max-height:85svh;
+  overflow-y:auto;
+  background:rgba(255,255,255,0.08);
+  backdrop-filter:blur(16px);
+  border-radius:22px;
+  padding:28px 22px;
+  box-shadow:0 0 40px rgba(255,255,255,0.08);
+  animation:fadeIn 1.2s ease forwards;
+}
+
+@keyframes fadeIn{
+  from{opacity:0; transform:translateY(16px)}
+  to{opacity:1; transform:translateY(0)}
+}
+
+.diary h2{
+  font-family:'Playfair Display', serif;
+  font-size:24px;
+  margin-bottom:18px;
+}
+
+.message{
+  font-family:'Playfair Display', serif;
+  font-size:17px;
+  line-height:1.85;
+}
+
+.message p{
+  margin-bottom:16px;
+}
+
+.signature{
+  margin-top:28px;
+  text-align:right;
+  font-size:15px;
+  opacity:0.85;
+}
+
+/* DESTROYED */
+.destroyed{
+  display:none;
+  width:100%;
+  max-width:420px;
+  text-align:center;
+  font-family:'Playfair Display', serif;
+  font-size:18px;
+  opacity:0.85;
+}
+</style>
+</head>
+
+<body>
+
+<!-- COVER -->
+<div class="cover" id="cover">
+  <div class="scarf"></div>
+
+  <h1>Private Diary</h1>
+  <p>Some pages are meant to be read only once.</p>
+
+  <input type="password" id="passcode" placeholder="Enter the secret…">
+  <button onclick="unlock()">Open Diary</button>
+  <div class="error" id="error">The diary stays silent.</div>
+</div>
+
+<!-- DIARY -->
+<div class="diary" id="diary">
+  <h2>Avrill,</h2>
+
+  <div class="message">
+   Avrill 
+well well well look whos here....
+               if 2 momths ago someone said I would be writing u a letter I wouldn't have believed it myself
+cause ahhh blahh oky
+
+   umm my dear lutappi(I d recommend u to listen so u wont feel bored) u barged into my  life without knocking.....
+like srslyyy now i wish i hadn't gotten this much close to u cause someday u ll have to go(i am the one whos going tho) ahhh tbh this year was a blast hehhe screw all this i love my hg soo she should know some truth 
+
+so re4member when i told u like i knew u before lan introduced me??? hehhe it was cause i had a massive crush on you
+i mean i saw u one day in loreto and i instantly felt a crush u were wearing a white something it was like after i broke up with Rosanne i think thats whn i started noticing you hehhe i was talking with a bunch of kids idk if u knows this heheh and yeahh i wanted to know ur name but i cant ask u or ask anyone in loretto so i was loike potte sarilla and then idk i saw a poster of u in loretto church itself i was like fuck its meant to be and searched for ur name "avril Rodrigues"  couldn't find  ur id then i totally let u go saying only a crush hehhee and i went on with my life not knowing i would accidently meet u again through my fav person ahhh gahh dayummm that day i was like fkk hehehe so i acted non challant infront of u broo and we started texting and i was going through a bad phase and i think i overused my ex gf rossane cause i hadn't gotten a closure from her but all this time i texted u i had feelings for u and i told Rosanne too heheh that makes me such a bad personnn hehehe whatever i liked the way u used to look at me it kinda made me feel like a special guy in your life hehehe and remember when u randomly sended videos i loved itt so muchhh u helped me so much my homegirll thnks for coming to my life and li8 it up even if it was for a short time gahh dayummm thanks avrilll i miss the old u ngl do u remember the day when u were mad at me without no reason and i kinda was high that day and we talked for a while(till 3 30)
+hehehe remember the time u asked we are friends ri8??? i wanted to say something elsee but screw all that again so 
+    t==hanks for coming into my life i lovee youuu i lovee uss and sorry for all the times i made u worry even tho u are a dork who dosent caree........
+i am stopping here cause if i dont stop i wont be able to stop and bech u make me overthink a lottttt like a lottt thats y i see down somedays hehe and u are still my pinned in chat and yess my fav notificationnn......... fk i really did mess it all up but yeahhh i felt like thiss hhehehe 
+       and gonna end this with a magic word
+       gahh dayummmmmmmm
+  </div>
+
+  <div class="signature">
+    gahh dayummmmmmmm
+  </div>
+</div>
+
+<!-- DESTROYED -->
+<div class="destroyed" id="destroyed">
+  This diary has been sealed forever.<br><br>
+  Some things are meant to exist only once.
+</div>
+
+<script>
+const SECRET = "gahh dayumm";
+
+if(localStorage.getItem("diaryOpened")){
+  cover.style.display="none";
+  destroyed.style.display="block";
+}
+
+function unlock(){
+  if(passcode.value === SECRET){
+    cover.style.display="none";
+    diary.style.display="block";
+
+    setTimeout(()=>{
+      localStorage.setItem("diaryOpened","true");
+      diary.style.display="none";
+      destroyed.style.display="block";
+    }, 120000); // 2 minutes
+  } else {
+    error.style.display="block";
+  }
+}
+</script>
+
+</body>
+</html>
