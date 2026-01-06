@@ -220,14 +220,7 @@ function unlock(){
     cover.style.display="none";
     diary.style.display="block";
 
-    setTimeout(()=>{
-      localStorage.setItem("diaryOpened","true");
-      diary.style.display="none";
-      destroyed.style.display="block";
-    }, 120000); // 2 minutes
-  } else {
-    error.style.display="block";
-  }
+    
 }
 </script>
 
